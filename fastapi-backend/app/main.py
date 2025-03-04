@@ -18,6 +18,7 @@ app.add_middleware(SlowAPIMiddleware)
 # CORS Middleware - Restrict origins for better security
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=["http://127.0.0.1:8000"],
     allow_credentials=True,
     allow_methods=["GET"],
     allow_headers=["X-API-KEY"],
