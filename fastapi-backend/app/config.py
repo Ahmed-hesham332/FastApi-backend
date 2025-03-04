@@ -1,11 +1,10 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # Load .env file
+load_dotenv()  
 
 class Settings:
-    POSTCODE: str = os.getenv("POSTCODE", "00000")  # Default if not set
+    API_KEY: str = os.getenv("API_KEY", "default-secret-key")
 
 settings = Settings()
 
-# print(f"Loaded POSTCODE: {settings.POSTCODE}")  # Debug print
