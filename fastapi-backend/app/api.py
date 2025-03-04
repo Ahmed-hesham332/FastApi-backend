@@ -22,11 +22,6 @@ api_instance = sib_api_v3_sdk.TransactionalEmailsApi(
         sib_api_v3_sdk.ApiClient(configuration)
     )
 
-records = [] 
-limit = 50
-offset = 0
-start_date = "2025-01-01"
-end_date = "2025-01-08"
 
 def get_TransactionalEmails():
     
